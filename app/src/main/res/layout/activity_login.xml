@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E-MAIL  :"
+            android:layout_margin="16dp"
+            android:textSize="20sp"
+            android:id="@+id/ed"
+            android:textColor="#fff"/>
+        <AutoCompleteTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/ed"
+            android:layout_marginLeft="5sp"
+            android:cursorVisible="true"
+            android:textColor="#fff"
+            android:id="@+id/edit"
+            android:autofillHints="prudhvi339@gmail.com"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PASSWORD  :"
+            android:layout_margin="16dp"
+            android:textSize="20sp"
+            android:id="@+id/ed2"
+            android:textColor="#fff"/>
+        <AutoCompleteTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/ed2"
+            android:layout_marginLeft="10sp"
+            android:cursorVisible="true"
+            android:textColor="#fff"
+            android:id="@+id/pwd"
+            android:autofillHints="9440946339"
+
+            />
+
+    </RelativeLayout>
+
+
+
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:onClick="login"/>
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIGN UP"
+        android:onClick="signup"/>
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GUEST USER"
+        android:onClick="GUEST"/>
+
+
+
+</LinearLayout>
